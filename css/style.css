@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #f6f7fb;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+}
+
+header {
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.header-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 30px 30px 30px 30px; 
+}
+
+header h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555555;
+    margin-top: 0;
+    text-align: center;
+}
+
+header p {
+    max-width: 750px;
+    margin: auto auto 20px;
+}
+
+header span {
+    display: inline-block;
+    background: #ffffff25;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+section {
+    background: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #0000000d;
+}
+
+h2 {
+    color: #c746ad;
+    text-align: center;
+}
+
+/* Estilo automático para todos os gráficos e imagens das seções */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f0edfb;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #c74698;
+    font-size: 32px;
+    margin: 0;
+}
+
+.observacao {
+    color: #687086;
+    font-size: 14px;
+}
+
+footer {
+    background: #1c3f65;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
